@@ -15,7 +15,7 @@ def hopper
           :languages => ["C"]
         }
      }
-my_hash
+my_hash[0]
 
 end
 
