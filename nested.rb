@@ -1,6 +1,6 @@
 
 def hopper
-	programmer_hash = 
+	my_hash = 
  		{
         :grace_hopper => {
           :known_for => "COBOL",
@@ -15,14 +15,14 @@ def hopper
           :languages => ["C"]
         }
      }
-
+my_hash[:grace_hopper]
 
 end
 
 def alan_kay_is_known_for
 	# What combination of keys would you use to return the value of the :known_for key of :alan_kay?
 	
-	programmer_hash = 
+	programmer_hash1 = 
  		{
         :grace_hopper => {
           :known_for => "COBOL",
@@ -37,10 +37,11 @@ def alan_kay_is_known_for
           :languages => ["C"]
         }
      }
+     programmer_hash1[:alan_kay][:known_for]
 end
 
 def dennis_ritchies_language
-	programmer_hash = 
+	programmer_hash2 = 
  		{
         :grace_hopper => {
           :known_for => "COBOL",
@@ -55,17 +56,22 @@ def dennis_ritchies_language
           :languages => ["C"]
         }
      }
+     programmer_hash2[:dennis_ritchie][:languages] = "C"
 end
 
 def adding_matz
 # add the following information to the top level of programmer_hash
 # :yukihiro_matsumoto => {
 #   :known_for => "Ruby",
-#    :languages => ["LISP", "C"]
-# }
+#     :languages => ["LISP", "C"]
+# # }
 
-	programmer_hash = 
+	programmer_hash3 = 
  		{
+ 		  :yukihiro_matsumoto => {
+      :known_for => "Ruby",
+      :languages => ["LISP", "C"]
+ 		  },
         :grace_hopper => {
           :known_for => "COBOL",
           :languages => ["COBOL", "FORTRAN"]
@@ -80,11 +86,11 @@ def adding_matz
         }
      }
 
-    
+    programmer_hash3
 end
 
 def changing_alan
-	programmer_hash = 
+	programmer_hash4 = 
  		{
         :grace_hopper => {
           :known_for => "COBOL",
@@ -99,14 +105,17 @@ def changing_alan
           :languages => ["C"]
         }
      }
+     
+       programmer_hash4[:alan_kay][:known_for] = "GUI"
+       programmer_hash4
      #change what Alan Kay is :known_for to the value of the alans_new_info variable. 
-     alans_new_info = "GUI"
+     #alans_new_info = "GUI"
      
      
 end
 
 def adding_to_dennis
-	programmer_hash = 
+	programmer_hash5 = 
  		{
         :grace_hopper => {
           :known_for => "COBOL",
@@ -121,5 +130,7 @@ def adding_to_dennis
           :languages => ["C"]
         }
      }
+     programmer_hash5[:dennis_ritchie][:languages] << ["Assembly"]
+     programmer_hash5
 
 end
