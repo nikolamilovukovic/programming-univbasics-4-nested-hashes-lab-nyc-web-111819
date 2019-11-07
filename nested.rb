@@ -1,6 +1,6 @@
 
 def hopper
-	programmer_hash = 
+	my_hash = 
  		{
         :grace_hopper => {
           :known_for => "COBOL",
