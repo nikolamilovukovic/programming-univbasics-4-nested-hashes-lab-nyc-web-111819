@@ -1,6 +1,6 @@
 
 def hopper
-	programmer_hahs = 
+	progradd 
  		{
         :grace_hopper => {
           :known_for => "COBOL",
