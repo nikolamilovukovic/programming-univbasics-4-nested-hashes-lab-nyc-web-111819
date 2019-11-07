@@ -87,6 +87,7 @@ def adding_matz
      }
 
     programmer_hash3[:alan_kay][:known_for] = "GUI"
+    programmer_hash3
 end
 
 def changing_alan
